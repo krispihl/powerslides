@@ -1,0 +1,386 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+p{
+	font-size: 1.125em;
+	color: #7E2C65;
+}
+
+
+/*GENERAL CSS*/
+.section-title {
+	padding-bottom: 20px;
+}
+
+.section-title h1 {
+	position: relative;
+	text-align: center;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 1.5em;	
+	color: #7E2C65;
+}
+
+.section-title h1:after {
+	content: '';
+	position: absolute;
+	bottom: -20px;
+	left: 46%;
+	width: 150px;
+	height: 1px;
+	background-color: #7E2C65;
+	margin-left: -30px;
+}
+
+.section-title p {
+	text-align: center;
+	font-weight: 400;
+	margin-top: 40px;
+	font-size: 1.375em;
+}
+
+/*NAVIGATION*/
+.navbar-light {
+	background-color: transparent;
+	z-index: 100;
+	transition: all 1s;
+}
+
+.navbar-light .navbar-nav li a {
+	color: #C69AB9 !important;
+	transition: all 1s;
+}
+
+.navbar-light .navbar-nav li a:hover {
+	color: #fff !important;
+	transition: all 1s;
+}
+
+.navbar-brand {
+	padding-left: 20px;
+}
+
+.navbar-nav .active a,
+.navbar-nav .active a:hover,
+.navbar-nav .active a:focus {
+	background-color: transparent;
+	color: green;
+}
+
+/*HEADER*/
+.header {
+	background-image: url('../images/Trinity_slider4.jpg');
+	background-attachment: fixed;
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.header-overlay {
+	background-color: rgba(0,0,0,0.3);
+	height: 100vh;
+}
+
+/*#description h1 {
+	background-size: cover;
+	background-color: rgba(255,255,255,.3);
+	margin: 0;
+	padding: 40px 40px;
+}*/
+
+#logo {
+	padding-top: 12em;
+	padding-bottom: 2em;
+}
+
+#description {
+	color: #fff;
+	font-family: 'Cantarell', sans-serif;
+	font-weight: 700;
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+#tagline {
+	font-weight: 400;
+	padding-bottom: 3em;
+}
+
+
+/*ABOUT*/
+
+/*.about-wrapper {
+	padding-top: 30px;
+}*/
+
+.about {
+	position: relative;
+	padding-bottom: 30px;
+	padding-left: 80px;
+}
+
+.about div {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.about div i {
+	font-size: 2.5em;
+	color: #C69AB9;
+	transition: all 1s;
+}
+
+.about p {
+	font-size: 1.125em;
+}
+
+.about-inside-wrapper {
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+#skate-image {
+	margin-bottom: 30px;
+}
+
+/*VIEWS*/
+
+.views-section {
+	background-color: #3E082E;
+}
+
+.views-section img {
+/*	padding-top: 40px;
+	padding-bottom: 40px;*/
+  	margin: 0 auto;
+  	border: 1px solid #C69AB9;
+  	border-radius: 10px;
+}
+
+.carousel-item {
+	padding-top: 60px;
+	padding-bottom: 70px;
+}
+
+.views-text p {
+	font-family: 'Cantarell', sans-serif;
+	font-size: 1.3em;
+	color: #C69AB9;
+	padding-top: 40px;
+}
+
+/*FEATURES*/
+
+.features-wrapper {
+	padding-top: 30px;
+	padding-bottom: 60px;
+	position: relative;
+}
+
+/*#left-feature-item {
+	position: relative;
+}*/
+
+table {
+	color: #7E2C65;
+}
+
+.features i {
+	color: #C69AB9;
+	padding-left: 20px;
+	padding-top: 5px;
+	font-size: 1.25em;
+}
+
+#center-feature-item {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*PURCHASE*/
+
+.purchase {
+	background-color: #3E082E;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.purchase h3 {
+	font-family: 'Cantarell', sans-serif;
+	color: #C69AB9;
+	text-align: center;
+	font-weight: 400;
+}
+
+.btn-purchase {
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+/*OTHER SKATES*/
+
+.other-skates p {
+	font-size: 1.25em;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+.other-skates a {
+	color: #C69AB9;
+}
+
+.other-skates a:hover {
+	color: #7E2C65;
+	text-decoration: none;
+}
+
+.skatename {
+	color: #7E2C65;
+	text-align: center;
+	background-color: #C69AB9;
+	border-radius: 4px;
+}
+
+/*COUNTERS*/
+
+.counter {
+	background-image: url('../images/Trinity_slider6.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	max-height: 600px;
+	background-position: 50% 50%;
+}
+
+.counter-overlay {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: rgba(0, 0, 0, .4);
+	max-height: 600px;
+}
+
+.counter-item i {
+	color: white;
+	font-size: 3.75em;
+}
+
+.counter-item h2 {
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 2.185em;
+	margin-top: 35px;
+}
+
+.counter-item p {
+	color: white;
+	font-size: 1.25em;
+}
+
+/*CONTACT*/
+
+.contact-form .form-control {
+	display: block;
+	width: 100%;
+	/*height: 50%;*/
+	padding: 6px 12px;
+	font-size: 0.875em;
+	background-color: transparent;
+	border: 1px solid #AEAEAE;
+	border-radius: 3px;
+	margin-bottom: 15px;
+}
+
+#message {
+	height: 80px;
+}
+
+.contact-form button {
+	background-color: transparent;
+	border: 1px solid #AEAEAE;
+	border-radius: 3px;
+	width: 100%;
+	text-transform: uppercase;
+	margin-top: 2px;
+	transition: all 1s;
+}
+
+.contact-form button:hover {
+	background-color: #C69AB9;
+	color: #2A061F;
+	border-color: #fff;
+}
+
+.social-icons {
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+.social-icons ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.social-icons li {
+	list-style: none;
+	display: inline;
+	padding-left: 10px;
+}
+
+.social-icons li a {
+	width: 70px;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	font-size: 1.875em;
+	color: #7E2C65;
+	transition: all 1s;
+}
+
+.social-icons li a:hover {
+	color: #C69AB9;
+}
+
+/*FOOTER*/
+
+.footer {
+	background-color: #1a1a1a;
+	padding-bottom: 25px;
+	padding-top: 35px;
+}
+
+#copyright {
+	width: 50%;
+}
+
+#copyright p {
+	color: #C69AB9;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+#copyright a {
+	color: #fff;
+}
+
+#arrow {
+	text-align: right;
+}
+
+#arrow i {
+	font-size: 1.875em;
+	color: #C69AB9;
+}
+
